@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+// import Warning from "@/components/Warning";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-gray-100`}>
         <noscript>You need to enable JavaScript to run this app.</noscript>
+        {/*<Warning />*/}
         <Header />
         <section className="flex flex-col min-h-screen">{children}</section>
         <Footer />
